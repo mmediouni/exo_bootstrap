@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+<!-- -------jquery------- -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- -------End jquery------- -->
+
+      <!-- -------jquery------- -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+    <!-- -------End jquery------- -->
+
+    <!-- -------Bootstrap CDN Start------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- -------Bootstrap END------- -->
+
+    <!-- -------FontAwsome Start------- -->
+    <script src="https://kit.fontawesome.com/02eae0272e.js" crossorigin="anonymous"></script>
+    <!-- -------FontAwsome END------- -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
+    <script>
+        // Wait for window load
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("50000");;
+        });
+    </script>
+
+    
+
+    
+    <title>Mon Blog</title>
+</head>
+
+<body>
+
+    <!-- =====Preloader div START===== -->
+    <div class="se-pre-con"></div>
+    <!-- =====Preloader div END===== -->
+
+<!-- =====Header START===== -->
+<header class="container-fluid px-0">
+    <nav class="d-flex justify-content-between p-2 align-items-center bg-dark">
+        <div class=" col-lg-6 col-md-3 d-flex justify-content-between flex-lg-nowrap flex-md-wrap flex-wrap">
+          <a class="h3 text-light text-decoration-none" href="article.html">Mon Blog</a>
+        <form class="form-inline flex-nowrap" action="">
+            <input class="form-control mr-sm-2" type="text" name="" id="">
+            <button class="btn btn-outline-light my-2 my-sm-0 text-muted" type="submit">Rechercher</button>
+        </form>
+      </div>
+        <div>
+            <a class="h5 text-muted text-decoration-none" href="index.html"> <i class="fas fa-power-off"></i> Se deconnecter</a>
+        </div>
+    </nav>
+</header>
+    <!-- =====Header END===== -->
+    <!-- =====Main START===== -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- ### aside START ### -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="row d-flex flex-column list-group font-weight-bold">
+                    <a class="list-group-item list-group-item-action text-primary font-weight-bold" href=""><i class="fas fa-home"></i> Tableau de bord</a>
+                    <a class="list-group-item list-group-item-action text-primary" href=""><i class="fas fa-folder"></i> Pages</a>
+                    <a class="list-group-item list-group-item-action active" href="#"><i class="fas fa-paragraph"></i> Articles</a>
+                    <a class="list-group-item list-group-item-action text-primary" href=""><i class="fas fa-tags"></i> Tags</a>
+                    <a class="list-group-item list-group-item-action text-primary" href=""><i class="fas fa-file"></i> Fichiers</a>
+                    <p class="list-group-item text-muted">Les Parametres</p>
+                    <a class="list-group-item list-group-item-action text-primary" href=""><i class="fas fa-users"></i> Utilisateurs</a>
+                    <a class="list-group-item list-group-item-action text-primary" href=""><i class="fas fa-star-and-crescent"></i> Parametres</a>
+                </div>
+
+            </div>
+            <!-- ### aside END ### -->
+
+
+            <!-- ### Article START ### -->
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-between p-3 my-4 align-items-center">
+                        <h1 class="">Article 1</h1>
+                        <div>
+                            <a class="btn btn-outline-secondary" href="article.html" role="button"><i class="fas fa-times"></i> Annuler</a>
+                            <a class="btn btn-primary" href="article.html" role="button"><i class="fas fa-check"></i> Valider</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <!-- le Form START -->
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Statut</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Publié</option>
+                                <option>Non publié</option>
+                                <option>Brouillon</option>
+                                <option>Blaa blaa 1</option>
+                                <option>Blaa Blaa 2</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Titre de l'aticle</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Lorem je c pas pas quoi bla bla ">
+                              </div>
+                            
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Contenue de l'article</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae dolorum ut praesentium ratione ad nesciunt nulla error minima, at odio ipsum unde corrupti, dolore quis a veniam expedita! Sunt." rows="15"></textarea>
+                            </div>
+                          </form>
+                        <!-- le Form END -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ### Article END ### -->
+        </div>
+    </main>
+    <!-- <footer>
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/H_sT1DR6NTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/H_sT1DR6NTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/H_sT1DR4NTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/H_sTeDR6NTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img width="1" height="1" src="https://i.pinimg.com/originals/7f/ea/17/7fea175e13ba4a4b29672d15b2497367.jpg" alt="">
+    </footer> -->
+</body>
+</html>
